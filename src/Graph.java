@@ -45,7 +45,7 @@ public class Graph {
         }
     }
 
-    public void BFSOrder() {
+    public void BFS() {
         B = new boolean[vertex + 1];
 
         System.out.println("Give Start of Graph");
@@ -58,19 +58,19 @@ public class Graph {
         }
         B[start] = true;
 
-        FirstBFSOrder();
+        Graph.this.BFS_visit();
 
         int part = 2;
         for (int n = 1; n <= vertex; n++) {
             if (!B[n]) {
                 System.out.println("Part " + part + " of Graph");
                 part++;
-                BFSOrder(n);
+                BFS_visit(n);
             }
         }
     }
     //this part for first all connected nodes
-    public void FirstBFSOrder() {
+    public void BFS_visit() {
 
         while (!q.isEmpty()) {
             int fromQ = -1;
@@ -96,7 +96,7 @@ public class Graph {
     }
     
     //this part for disconnected nodes
-    public void BFSOrder(int n) {
+    public void BFS_visit(int n) {
         try {
             q.add(n);
         } catch (Exception e) {
