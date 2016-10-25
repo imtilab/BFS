@@ -8,10 +8,10 @@
  *
  * @author mti
  */
-public class BFS{
+public class Main{
 
     public static void main(String[] args) {
-        Graph gp=new Graph();
+        BFS_Algorithm gp=new BFS_Algorithm();
         gp.setGraph();
         gp.BFS();
     }

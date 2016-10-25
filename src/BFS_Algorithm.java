@@ -12,7 +12,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Queue;
 
-public class Graph {
+public class BFS_Algorithm {
 
     Scanner kb = new Scanner(System.in);
 
@@ -58,7 +58,7 @@ public class Graph {
         }
         B[start] = true;
 
-        Graph.this.BFS_visit();
+        BFS_Algorithm.this.BFS_visit();
 
         int part = 2;
         for (int n = 1; n <= vertex; n++) {
