@@ -14,7 +14,7 @@ bfs(G) > G = (V, E)
 
 BFS(G, s) > G = (V, E)
 1 color [s] = gray; p[s] = null; d[s] = 0
-2 Q = ;; Enqueue(Q, s)
+2 Q = emptySet; Enqueue(Q, s)
 3 while Q 6= ;
 4   do u = Dequeue(Q)
 5     for each vertex v 2 Adj[u]
