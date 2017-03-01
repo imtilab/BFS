@@ -1,4 +1,4 @@
-# BFS Algorithm
+# Breadth-first search (BFS) Algorithm
 
 ```
 bfs(G) > G = (V, E)
