@@ -1,5 +1,4 @@
 # BFS Algorithm
-BFS- JAVA source code
 
 ```
 bfs(G) > G = (V, E)
